@@ -27,6 +27,11 @@ sourceSets {
 
 test {
     useJUnit()
+
+    // Configuration to display standard output and standard error for tests
+    testLogging {
+        showStandardStreams = true
+    }
 }
 
 jacocoTestReport {
